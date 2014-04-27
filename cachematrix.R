@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
   # this will set the value of the matrix to y which is passed as parameter to set function
   set <- function(y) {
     x <<- y 
-    mat <<- NULL # here since we set another matrix, we set to inverse as NULL
+    mat <<- NULL # here since we set another matrix, we set mat which is inverse as NULL
   }
   #this will return original matrix 
   get <- function() x
