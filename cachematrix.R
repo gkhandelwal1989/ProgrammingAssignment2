@@ -9,14 +9,14 @@
 makeCacheMatrix <- function(x = matrix()) {
   # initially mat will get set to NULL
   mat <- NULL # mat is actually the variable which will store inverse of matrix
-  # this will set the value of the matrix passed as parameter i.e y
+  # this will set the value of the matrix to y which is passed as parameter to set function
   set <- function(y) {
     x <<- y
     mat <<- NULL
   }
   #this will return original matrix 
   get <- function() x
-  # this function will set matrix to tempmatrix which is inverse of a matrix
+  # this function will set matrix's value to tempmatrix which is inverse of a matrix
   setmatrix <- function(tempMatrix) mat <<- tempMatrix
   #this will return matrix which is the resultant inverse matrix
   getmatrix <- function() mat
